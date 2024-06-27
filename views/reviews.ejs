@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>reviews</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+    <%- include('blocks/header') -%>
+
+        <h1 id="Feedback">Feedback on my work</h1>
+
+        <div id="reviews">
+            <% reviews.forEach(review => { %>
+                <div class="review">
+                    <h3><%= review.username %></h3>
+                    <p><%= review.review %></p>
+                    <p><%= review.date %></p>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+
+        <div class="form-wrapper">
+            <form action="/add-review" method="post" class="form">
+                <input type="text" name="username" placeholder="Ваше имя" required>
+                <textarea name="review" placeholder="Ваш отзыв" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        
+
+        <%- include('blocks/footer') -%>
+
+</body>
+
+</html>
