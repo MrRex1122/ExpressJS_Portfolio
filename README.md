@@ -1,3 +1,5 @@
+> **Archived learning project.** This Express/EJS/XML website is retained as an early exercise, not as a production authentication system. The checked-in `.env` was removed from the current branch. Create a local `.env` from `.env.example`, use unique values, and do not reuse the old demonstration credentials (which may remain in Git history).
+
 # Author: Evgenii Korolev  
 # XML-Driven Express Site
 
@@ -32,7 +34,7 @@ This is a simple web project powered by **Node.js**, **Express**, and **EJS**, w
   The `/contactme` form uses the `mailto:` protocol to send an email directly via the user's default client.
 
 - **Modular Structure**:
-  - `app.js` – Main Express setup and route handlers
+  - `index.js` – Main Express setup and route handlers
   - `views/` – EJS templates
   - `public/` – Static CSS and images
 
